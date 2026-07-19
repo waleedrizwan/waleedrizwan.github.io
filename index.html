@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waleed Rizwan — Software Developer</title>
+  <meta name="description" content="Waleed Rizwan is a software developer in Toronto building data pipelines that move millions of rows and tooling for agentic AI systems." />
+  <meta name="author" content="Waleed Rizwan" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Waleed Rizwan — Software Developer" />
+  <meta property="og:description" content="Software developer in Toronto. Data pipelines that move millions of rows, and tooling for agentic AI systems." />
+  <meta property="og:url" content="https://waleedrizwan.github.io" />
+  <meta property="og:image" content="https://waleedrizwan.github.io/assets/avatar.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Favicon: monogram, inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23171717'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' fill='%23fbfbf9' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E" />
+
+  <!-- Theme: set before paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to work</a>
+
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Waleed Rizwan — home">
+      <span class="wordmark__mark">W</span>
+      <span class="wordmark__name">Waleed&nbsp;Rizwan</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+      <span class="theme-toggle__dot" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <p class="eyebrow">Software Developer · Toronto</p>
+      <h1 id="hero-heading" class="hero__title">
+        I build <em>data pipelines</em> that move millions of rows, and <em>tooling</em> for agentic AI systems.
+      </h1>
+      <p class="hero__lead">
+        Currently a software developer at BrainBox AI. I care about systems that are
+        reliable under load, tests that catch real failures, and the growing space where
+        software agents write and ship software.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#work">Selected work</a>
+        <a class="btn" href="https://github.com/waleedrizwan" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="mailto:w2rizwan@gmail.com">Email ↗</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 id="about-heading" class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__body">
+          <p>
+            I'm a software developer at <strong>BrainBox AI</strong>, where I build the data
+            pipelines and testing infrastructure behind a platform that optimizes energy use
+            across thousands of smart buildings — cleaning tens of millions of rows of sensor
+            telemetry a month and making sure the algorithms feeding on it stay healthy.
+          </p>
+          <p>
+            Outside of work I build tooling for <strong>agentic AI</strong>: development
+            pipelines, benchmarks, and infrastructure that let models build and ship software
+            with real guardrails — plus the occasional product when something bugs me enough
+            to fix it.
+          </p>
+          <p>
+            I'm pursuing an <strong>MSCS at Georgia Tech</strong>. Before software I studied
+            Accounting &amp; Financial Management at <strong>Waterloo</strong>, which is where
+            the interest in data and markets first took hold.
+          </p>
+        </div>
+        <aside class="about__aside">
+          <img class="about__avatar" src="assets/avatar.png" alt="Waleed Rizwan" width="80" height="80" loading="lazy" />
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Toronto, ON</dd></div>
+            <div><dt>Focus</dt><dd>Data pipelines · Agentic AI · Testing</dd></div>
+            <div><dt>Studying</dt><dd>MSCS, Georgia Tech</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section" aria-labelledby="work-heading">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 id="work-heading" class="section__title">Selected work</h2>
+        <p class="section__note">Pulled from active repositories. Six of thirty-three.</p>
+      </div>
+
+      <ol class="projects">
+        <li class="project">
+          <a class="project__link" href="https://github.com/waleedrizwan/crownland" target="_blank" rel="noopener">
+            <span class="project__num">01</span>
+            <div class="project__main">
+              <h3 class="project__name">Crownland <span class="project__arrow" aria-hidden="true">↗</span></h3>
+              <p class="project__desc">
+                A free, Canada-wide outdoors map that classifies public land and overlays known
+                firearm-discharge restriction zones, with a mandatory legal-context layer. One
+                Expo codebase running on both web and iOS.
+              </p>
+              <ul class="tags"><li>TypeScript</li><li>Expo</li><li>React Native</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project">
+          <a class="project__link" href="https://github.com/waleedrizwan/agentic-development-pipeline" target="_blank" rel="noopener">
+            <span class="project__num">02</span>
+            <div class="project__main">
+              <h3 class="project__name">Agentic Development Pipeline <span class="project__arrow" aria-hidden="true">↗</span></h3>
+              <p class="project__desc">
+                A staged pipeline that takes a task with acceptance criteria and drives it to a
+                merged PR — execution-backed gates, fresh-context code reviews, a separate
+                test-authoring agent, and per-stage self-consistency. Runner-agnostic by design.
+              </p>
+              <ul class="tags"><li>Python</li><li>LLM orchestration</li><li>CI</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project">
+          <a class="project__link" href="https://github.com/waleedrizwan/llm-selfbench" target="_blank" rel="noopener">
+            <span class="project__num">03</span>
+            <div class="project__main">
+              <h3 class="project__name">llm-selfbench <span class="project__arrow" aria-hidden="true">↗</span></h3>
+              <p class="project__desc">
+                A dependency-free CLI for benchmarking Claude Code, Codex, and any OpenRouter
+                model. It runs k independent attempts per task and scores them by
+                self-consistency — pass@1, majority@k, stability, latency.
+              </p>
+              <ul class="tags"><li>Python</li><li>Evals</li><li>CLI</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project">
+          <a class="project__link" href="https://github.com/waleedrizwan/openrouter-claudecode" target="_blank" rel="noopener">
+            <span class="project__num">04</span>
+            <div class="project__main">
+              <h3 class="project__name">cc-failover-proxy <span class="project__arrow" aria-hidden="true">↗</span></h3>
+              <p class="project__desc">
+                Keeps Claude Code working after you hit your usage limit: it catches the 429,
+                transparently re-routes the request to a cheaper model through OpenRouter, and
+                streams the response back. Zero dependencies, SSE pass-through.
+              </p>
+              <ul class="tags"><li>JavaScript</li><li>Node</li><li>Proxy / SSE</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project">
+          <a class="project__link" href="https://github.com/waleedrizwan/ember" target="_blank" rel="noopener">
+            <span class="project__num">05</span>
+            <div class="project__main">
+              <h3 class="project__name">Ember <span class="project__arrow" aria-hidden="true">↗</span></h3>
+              <p class="project__desc">
+                A native SwiftUI habit tracker built as the vehicle for an agent-driven
+                build → test → deploy pipeline: the agent builds, tests, and iterates
+                autonomously while every shipping action stays gated behind human approval.
+              </p>
+              <ul class="tags"><li>Swift</li><li>SwiftUI</li><li>XCTest</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project">
+          <a class="project__link" href="https://github.com/waleedrizwan/rf-trading-engine" target="_blank" rel="noopener">
+            <span class="project__num">06</span>
+            <div class="project__main">
+              <h3 class="project__name">RF Trading Engine <span class="project__arrow" aria-hidden="true">↗</span></h3>
+              <p class="project__desc">
+                A trading engine driven by a 50-tree Random Forest over engineered technical
+                indicators (RSI, MACD, moving averages), with its own back-testing framework —
+                ~11% return versus ~1% buy-and-hold across ten years of historical data.
+              </p>
+              <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Backtesting</li></ul>
+            </div>
+          </a>
+        </li>
+      </ol>
+
+      <p class="section__more">
+        <a href="https://github.com/waleedrizwan?tab=repositories" target="_blank" rel="noopener">All repositories on GitHub ↗</a>
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section" aria-labelledby="exp-heading">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2 id="exp-heading" class="section__title">Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="role">
+          <div class="role__when"><span>Mar 2023</span><span class="role__present">Present</span></div>
+          <div class="role__body">
+            <h3 class="role__title">Software Developer <span class="role__co">· BrainBox AI</span></h3>
+            <p class="role__place">Toronto, ON</p>
+            <ul class="role__points">
+              <li>Automated cleansing and standardization of 60M+ rows/month of raw sensor telemetry, reclaiming ~8 engineer-hours per building each month and clearing a week-long backlog.</li>
+              <li>Architected an AWS ECS scheduled task consolidating telemetry from 5,000+ smart buildings into daily algorithm-health reports, cutting incident response time by 40%.</li>
+              <li>Built a GitLab CI end-to-end test framework that spins up full building simulations in Docker, raising deployment success from 88% to 98%.</li>
+              <li>Cut pipeline runtime by 35% via parallelized transforms and incremental loads.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="role">
+          <div class="role__when"><span>Sep 2021</span><span>Dec 2021</span></div>
+          <div class="role__body">
+            <h3 class="role__title">Data Analyst Intern <span class="role__co">· KitchenMate</span></h3>
+            <p class="role__place">Toronto, ON</p>
+            <ul class="role__points">
+              <li>Built a live Tableau performance dashboard surfacing sales and usage metrics that helped close a contract with Keurig.</li>
+              <li>Wrote a Python tool to automate resume screening, saving recruiters 10+ hours per hiring cycle.</li>
+              <li>Wrote SQL to extract and standardize order and machine-usage data across 40 locations for weekly reporting.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="role">
+          <div class="role__when"><span>Sep 2020</span><span>Dec 2020</span></div>
+          <div class="role__body">
+            <h3 class="role__title">Software Developer Intern <span class="role__co">· Loblaw Companies</span></h3>
+            <p class="role__place">Toronto, ON</p>
+            <ul class="role__points">
+              <li>Built and deployed an inventory-control web app that cut 15+ hours/week of manual tracking for store managers.</li>
+              <li>Built React UI from Figma mockups and REST endpoints that reduced average page load time by 30%.</li>
+              <li>Wrote Jest unit and integration tests, raising coverage on the inventory module to 85%.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <div class="education">
+        <h3 class="education__label">Education</h3>
+        <ul class="education__list">
+          <li>
+            <span class="education__school">Georgia Institute of Technology</span>
+            <span class="education__deg">M.S., Computer Science</span>
+            <span class="education__yr">2024 — Present</span>
+          </li>
+          <li>
+            <span class="education__school">University of Waterloo</span>
+            <span class="education__deg">B.A., Accounting &amp; Financial Management</span>
+            <span class="education__yr">2017 — 2022</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills">
+        <h3 class="skills__label">Skills</h3>
+        <div class="skills__groups">
+          <div><span class="skills__cat">Languages</span> Python · JavaScript · SQL · Bash · Swift</div>
+          <div><span class="skills__cat">Frameworks &amp; Testing</span> React · Flask · pytest · Cypress · Selenium · Puppeteer · Locust</div>
+          <div><span class="skills__cat">Data &amp; ML</span> pandas · NumPy · scikit-learn · Plotly · Tableau</div>
+          <div><span class="skills__cat">Infrastructure</span> AWS · Docker · Terraform · GitLab CI · MySQL</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2 id="contact-heading" class="section__title">Contact</h2>
+      </div>
+      <p class="contact__lead">
+        Open to interesting problems and good conversations. The fastest way to reach me:
+      </p>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:w2rizwan@gmail.com">
+          <span class="contact__k">Email</span>
+          <span class="contact__v">w2rizwan@gmail.com</span>
+        </a>
+        <a class="contact__link" href="https://github.com/waleedrizwan" target="_blank" rel="noopener">
+          <span class="contact__k">GitHub</span>
+          <span class="contact__v">github.com/waleedrizwan ↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Waleed Rizwan</span>
+    <span class="footer__meta">Built by hand · Toronto</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
