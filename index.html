@@ -328,5 +328,41 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Visitor notification: emails site owner on each visit via Web3Forms -->
+  <script>
+    (async function () {
+      try {
+        // Only notify once per browser session to cut down on refresh spam
+        if (sessionStorage.getItem('visit_notified')) return;
+        sessionStorage.setItem('visit_notified', '1');
+
+        var geo = {};
+        try { geo = await (await fetch('https://ipapi.co/json/')).json(); } catch (e) {}
+
+        var p = new URLSearchParams(location.search);
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: 'c67b4603-53c2-4706-9b90-bacc907d3e71',
+            subject: 'New visit — waleedrizwan.github.io',
+            from_name: 'Site Visitor Logger',
+            ip: geo.ip || 'unknown',
+            location: (geo.city || '?') + ', ' + (geo.region || '?') + ', ' + (geo.country_name || '?'),
+            isp: geo.org || 'unknown',
+            came_from: document.referrer || 'direct / typed in',
+            utm: p.get('utm_source') || p.get('ref') || 'none',
+            landing_page: location.href,
+            browser: navigator.userAgent,
+            language: navigator.language,
+            screen: screen.width + 'x' + screen.height,
+            time: new Date().toString()
+          })
+        }).catch(function () {});
+      } catch (e) {}
+    })();
+  </script>
 </body>
 </html>
