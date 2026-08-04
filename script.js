@@ -20,8 +20,9 @@
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   // --- Reveal-on-scroll (progressive enhancement) ---
+  // Hero animates via CSS on load; sections fade up as they enter the viewport.
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var targets = document.querySelectorAll(".section, .hero__lead, .hero__actions");
+  var targets = document.querySelectorAll(".section");
 
   if (!prefersReduced && "IntersectionObserver" in window) {
     targets.forEach(function (el) { el.classList.add("reveal"); });
