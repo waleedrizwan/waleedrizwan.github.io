@@ -321,18 +321,22 @@ strong { font-weight: 600; color: var(--ink); }
   box-shadow: var(--shadow);
 }
 .portrait__img { width: 100%; height: 100%; object-fit: cover; }
+/* Monogram is the fallback only — hidden whenever the photo loads. */
 .portrait__mark {
-  position: absolute; inset: 0; display: grid; place-items: center;
+  position: absolute; inset: 0; display: none; place-items: center;
   font-family: var(--font-display); font-weight: 700; font-size: 3.4rem; letter-spacing: -.03em;
   background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
 }
-.portrait::before {
-  content: ""; position: absolute; inset: 0;
-  background: radial-gradient(circle at 30% 15%, var(--glow-a), transparent 55%);
-  opacity: .7; pointer-events: none;
+/* Subtle top-light so the portrait sits in the page's atmosphere without tinting skin. */
+.portrait::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 10%, transparent) 0%, transparent 42%);
+  mix-blend-mode: soft-light;
 }
 /* when the photo is missing, show the monogram over a soft gradient wash */
 .portrait--empty { background: linear-gradient(160deg, var(--bg-2), color-mix(in srgb, var(--accent) 14%, var(--bg-2))); }
+.portrait--empty .portrait__mark { display: grid; }
+.portrait--empty::after { background: radial-gradient(circle at 30% 15%, var(--glow-a), transparent 55%); mix-blend-mode: normal; opacity: .7; }
 
 .facts { margin: 0; display: grid; gap: 1.1rem; }
 .facts div { display: grid; gap: .2rem; }

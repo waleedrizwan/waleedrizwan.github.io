@@ -9,7 +9,7 @@ from the `main` branch root via GitHub Pages.
 index.html      # markup + content
 styles.css      # editorial / monochrome theme, light + dark
 script.js       # theme toggle, footer year, scroll reveal
-assets/         # avatar
+assets/         # portrait, resume
 ```
 
 ## Local preview
