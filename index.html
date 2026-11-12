@@ -9,12 +9,33 @@ body { max-width: 40em; margin: 1em auto; padding: 0 1em; font-family: Georgia, 
 a { color: #00e; }
 a:visited { color: #551a8b; }
 img { display: block; max-width: 100%; height: auto; margin: 0.5em 0; border: 1px solid #ccc; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+th, td { text-align: left; vertical-align: top; padding: 0.3em 0.5em 0.3em 0; border-bottom: 1px solid #ddd; }
+th { font-weight: normal; color: #555; }
+.small { font-size: 0.9em; color: #555; }
 </style>
 </head>
 <body>
 
 <h1>Waleed Rizwan</h1>
 <p><a href="https://github.com/waleedrizwan">github.com/waleedrizwan</a></p>
+
+<h2>Deployed apps</h2>
+<p class="small">Every web app I have running right now. Last checked 12 November 2026.</p>
+<table>
+<tr><th>App</th><th>Host</th><th>Notes</th></tr>
+<tr><td><a href="https://inbound-game.pages.dev">Inbound</a></td><td>Cloudflare Pages</td><td>3D tower defence game</td></tr>
+<tr><td><a href="https://canada-job-tracker.w2riz.workers.dev">Canada Job Tracker</a></td><td>Cloudflare Workers</td><td>Job Bank postings dashboard</td></tr>
+<tr><td><a href="https://cheapest-land.pages.dev">landfinder</a></td><td>Cloudflare Pages</td><td>Password protected</td></tr>
+<tr><td><a href="https://market-watch.w2riz.workers.dev">Market Watch</a></td><td>Cloudflare Workers</td><td>Sign-in required. Price moves predicted from raw materials (<a href="https://github.com/waleedrizwan/market-watch-oss">source</a>)</td></tr>
+<tr><td><a href="https://trending-desk.w2riz.workers.dev">Trending Desk</a></td><td>Cloudflare Workers</td><td>Sign-in required. Snapshots trending pages and reports what changed</td></tr>
+<tr><td><a href="https://thrashofmans.w2riz.workers.dev">thrashofmans</a></td><td>Cloudflare Workers + Fly.io</td><td>Browser base-builder game, in development</td></tr>
+<tr><td><a href="https://produce-stock.web.app">Produce Stock</a></td><td>Firebase Hosting</td><td>Support site for the iPhone app</td></tr>
+<tr><td><a href="https://waleedrizwan.github.io/DreamCatcher/">Dream Catcher</a></td><td>GitHub Pages</td><td>Site for the iPhone app</td></tr>
+<tr><td><a href="https://waleedrizwan.github.io/NightOwl/docs/example/">Night Owl</a></td><td>GitHub Pages</td><td>Example night report</td></tr>
+<tr><td><a href="https://elevate-behavioural-services-preview.netlify.app/">Elevate Behavioural Services</a></td><td>Netlify</td><td>Client website, preview build</td></tr>
+<tr><td><a href="https://fast-frugal-hotel-agent.onrender.com/">Fast &amp; Frugal Hotel Agent</a></td><td>Render</td><td>Offline: returns 404</td></tr>
+</table>
 
 <h2>Projects</h2>
 
@@ -56,7 +77,7 @@ img { display: block; max-width: 100%; height: auto; margin: 0.5em 0; border: 1p
 
 <h3><a href="https://fast-frugal-hotel-agent.onrender.com/">Fast &amp; Frugal Hotel Agent</a></h3>
 <p>Our entry for the TechTO hackathon. You give it a city and dates, and it phones the cheapest hotels at the same time with a voice agent, then emails the cheapest one that confirms a room.</p>
-<p><a href="https://fast-frugal-hotel-agent.onrender.com/">live</a></p>
+<p><a href="https://fast-frugal-hotel-agent.onrender.com/">site</a> (currently offline)</p>
 
 <h3><a href="https://produce-stock.web.app">Produce Stock</a></h3>
 <p>An iPhone app for produce shops. Staff record what was sold, delivered or spoiled on their own phones, and every phone shows the same count.</p>
